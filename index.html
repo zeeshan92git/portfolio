@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAILWIND PROJECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-orange-500 font-myfont">
+
+    <nav>
+        <div
+            class=" fixed top-0 left-0 z-50 flex justify-between items-center bg-orange-500 text-gray-900 text-2xl w-full h-16 px-4  mb-10 ">
+            <!-- Logo / Name -->
+            <span class="font-bold ">Muhammad Zeeshan Ameer</span>
+
+            <!-- Hamburger Icon (visible on small screens) -->
+            <button id="menu-toggle" class="text-3xl md:hidden focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menu Links for Large Screens -->
+            <ul id="menu" class="hidden md:flex justify-around items-center h-16 gap-x-8  ">
+                <li class="font-semibold hover:text-white  hover:underline hover:underline-offset-8 cursor-pointer">
+                    <a href="#">Home </a>
+                </li>
+                <li class="font-semibold hover:text-white hover:underline hover:underline-offset-8 cursor-pointer">
+                    <a href="#about">About</a>
+                </li>
+                <li class="font-semibold hover:text-white hover:underline hover:underline-offset-8 cursor-pointer">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="font-semibold hover:text-white hover:underline hover:underline-offset-8 cursor-pointer">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="font-semibold hover:text-white hover:underline hover:underline-offset-8 cursor-pointer">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu (small portion on right side) -->
+        <div id="mobile-menu"
+            class="md:hidden hidden fixed top-0 right-0 pt-16 bg-orange-600 text-white w-2/5 h-fit shadow-2xl shadow-black  transform translate-x-full transition-transform duration-300 ease-in-out  ">
+            <ul class="flex flex-col gap-y-4 py-4 items-start pl-4">
+                <li class="font-semibold hover:text-black hover:underline hover:underline-offset-8 cursor-pointer">Home
+                </li>
+                <li class="font-semibold hover:text-black hover:underline hover:underline-offset-8 cursor-pointer">About
+                </li>
+                <li class="font-semibold hover:text-black hover:underline hover:underline-offset-8 cursor-pointer">
+                    Skills</li>
+                <li class="font-semibold hover:text-black hover:underline hover:underline-offset-8 cursor-pointer">
+                    Projects</li>
+                <li class="font-semibold hover:text-black hover:underline hover:underline-offset-8 cursor-pointer">
+                    Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="flex flex-col lg:flex-row justify-center items-center  mt-20 w-full px-4 lg:px-0">
+        <!-- Text Section -->
+        <div class="flex flex-col text-white p-6 lg:p-12 w-full lg:w-1/2 ">
+            <p class="text-lg mb-2">Hi it's me</p>
+            <p class=" !text-6xl font-bold  sm:text-2xl ">Muhammad Zeeshan <br><span class="mt-2">Ameer</span></p>
+            <p class="mt-2 text-xl lg:text-3xl">And I'm a
+                <span class="text-black text-2xl lg:text-3xl font-semibold animate-fade-in-out  ">Full Stack Mern Developer</span>
+            </p>
+            <p class="w-full lg:w-1/2 mt-4 mb-4 text-gray-900">My goal is to create beautiful and functional websites
+                that exceed your
+                expectations. With
+                a deep understanding of the latest technologies and trends, I can help you achieve your goals and stand
+                out from the competition. Let's collaborate on your next project - contact me today to get started.</p>
+
+            <div class="buttons flex justify-start gap-x-5">
+                <button
+                    class="w-full sm:w-auto py-3 px-4 text-white font-semibold bg-black rounded-lg border-2 border-orange-500 hover:border-black hover:bg-orange-500">
+                    Hire Me</button>
+
+                <button
+                    class="w-full sm:w-auto py-3 px-4 text-white font-semibold bg-black rounded-lg border-2 border-orange-500 hover:border-black hover:bg-orange-500">
+                    Download Resume</button>
+            </div>
+        </div>
+
+        <!-- Image Section -->
+        <div
+            class="relative lg:mr-6 mt-6 lg:mt-0 w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full bg-gray-950  flex items-center justify-center">
+
+            <!-- Glowing effect -->
+            <div class="absolute inset-0 rounded-full bg-gradient-to-br from-orange-500 to-orange-700 blur-2xl"></div>
+
+            <!-- Image inside the circle -->
+            <img src="DP (2).png" alt="Profile picture of Muhammad Zeeshan Ameer" class="relative w-full h-full object-cover rounded-full z-10">
+        </div>
+
+    </section>
+
+    <!-- about section -->
+
+    <section class="bg-orange-500 py-16 px-4 sm:px-6 lg:px-8 scroll-mt-12" id="about">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="!text-7xl font-bold md:text-3xl text-gray-900">About Me</h2>
+            </div>
+
+            <!-- Two-column layout starts here -->
+            <div
+                class="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-y-8 md:gap-x-12 lg:gap-x-16 px-4 py-8 ">
+                <!-- Column #1 -->
+                <div class="p-4 md:p-6 lg:p-8 rounded-lg shadow-lg shadow-black max-w-lg   min-w-[200px]">
+                    <p class="text-gray-900 text-lg text-center">
+                        &nbsp; I'm a <b>Full-Stack MERN developer</b> curious to learn more about emerging web development
+                        technologies. My goal is to create beautiful and functional websites that exceed your
+                        expectations. As a <b>proficient MERN developer</b>, I also have knowledge of TypeScript, React,
+                        SQL databases, and content management systems such as Sanity and Contentful. I can also
+                        seamlessly integrate AI technologies like Large Language Models and LangChain into your
+                        applications.
+                    </p>
+                </div>
+
+                <!-- Column #2 -->
+                <div class="p-4 md:p-6 lg:p-8 rounded-lg shadow-lg shadow-black max-w-lg min-w-[200px]">
+                    <p class="text-gray-900 text-lg text-center">
+                        &nbsp; I'm not only a <b>Skilled Engineer</b> but also a vital team member, with outstanding
+                        communication and team management skills. My dedication to detail in project management is
+                        matched by my passion for building dynamic, responsive web apps. With a great eye for design and
+                        a commitment to teamwork, I’m a <b>Tech Enthusiast</b> with a deep interest in computers and
+                        programming. I'm currently enrolled in a course on Gen AI, Web 3.0, and the Metaverse to prepare
+                        for the next generation of the internet.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- skills-section -->
+    <section class="my-skills py-12 scroll-mt-16 " id="skills">
+        <h2 class=" text-center  !text-7xl  sm:text-4xl text-gray-900  font-bold  mb-10 py-2 ">My Skills</h2>
+
+        <!-- Toggle Buttons -->
+        <div class="flex justify-center  mt-16  ">
+            <button id="soft-skills-btn"
+                class="mr-4 py-2 px-6 bg-black text-white  text-center rounded-lg hover:bg-orange-600 transition duration-200">Soft
+                Skills</button>
+            <button id="technical-skills-btn"
+                class="py-2 px-6 bg-black  text-white rounded-lg hover:bg-orange-600 transition duration-200">Technical
+                Skills</button>
+        </div>
+
+        <!-- Soft Skills Section (Visible by default) -->
+        <div id="soft-skills" class="skills-content flex flex-wrap justify-center gap-x-4 gap-y-9 mt-14 ">
+            <div
+                class="skill bg-black text-white  text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Communication</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Teamwork</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Problem-solving</div>
+            <div
+                class="skill bg-black text-white text-center  rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Adaptability</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Critical Thinking</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Time Management</div>
+            <!-- Add more soft skills as needed -->
+        </div>
+
+        <!-- Technical Skills Section (Hidden by default) -->
+        <div id="technical-skills" class="skills-content flex flex-wrap justify-center gap-x-4 gap-y-9 hidden mt-14 ">
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                HTML</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                CSS</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Bootstrap</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Tailwind CSS</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                React</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                JavaScript</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Next.js</div>
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                Express.js</div>
+
+            <div
+                class="skill bg-black text-white text-center rounded-lg py-2 px-4 border-orange-500 border-2 hover:border-black hover:bg-orange-500 transition duration-200 w-1/2 sm:w-1/3 md:w-1/4">
+                MongoDB</div>
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <div class="projects text-center py-12   scroll-mt-16 " id="projects">
+        <p class="text-gray-900 !text-7xl font-bold sm:text-3xl  mx-auto inline">My Projects</p>
+
+        <div class="projects flex flex-wrap justify-center items-center gap-x-10   gap-y-16 mx-auto mt-16 ">
+
+            <div
+                class="project-card  w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 rounded-lg shadow-lg shadow-black overflow-hidden">
+                <img src="p1.png" alt="Project 1" class="w-full h-auto">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">CodeChamp Website</h3>
+                    <p class="text-white">UI Of Coding Website</p>
+                </div>
+            </div>
+
+            <div
+                class="project-card w-1/2 sm:w-1/2  md:w-1/3 lg:w-1/4 rounded-lg shadow-lg  shadow-black overflow-hidden">
+                <img src="p2.png" alt="Project 2" class="w-full h-auto">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Web Developers</h3>
+                    <p class="text-white">Web-Page by HTML & CSS </p>
+                </div>
+            </div>
+
+            <div
+                class="project-card w-1/2 sm:w-1/2  md:w-1/3 lg:w-1/4 rounded-lg shadow-lg  shadow-black overflow-hidden">
+                <img src="p3.png" alt="Project 3" class="w-full h-auto">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">RSP Game</h3>
+                    <p class="text-white">Game using HTML,CSS & JS</p>
+                </div>
+            </div>
+
+
+            <div
+                class="project-card w-1/2 sm:w-1/2  md:w-1/3 lg:w-1/4 rounded-lg shadow-lg shadow-black  overflow-hidden">
+                <img src="p5.png" alt="Project 5" class="w-full h-auto">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Car System</h3>
+                    <p class="text-white">Car Managemnet System</p>
+                </div>
+            </div>
+
+            <div
+                class="project-card w-1/2 sm:w-1/2  md:w-1/3 lg:w-1/4 rounded-lg shadow-lg  shadow-black overflow-hidden">
+                <img src="p6.png" alt="Project 6" class="w-full h-auto">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">AMAZON</h3>
+                    <p class="text-white">Clone of Amazon Website</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <hr class="w-full  border-b-2 border-orange-400 mx-auto mt-8 "> -->
+    <footer id="contact" class="py-12 bg-orange-500 text-black flex flex-col justify-center items-center scroll-mt-8 ">
+
+        <!-- social links -->
+        <div class="w-full sm:w-1/3 mb-6 text-center">
+            <h4 class="font-bold text-2xl mb-4">Follow Me</h4>
+            <div class="flex justify-center space-x-6 mt-2">
+                <a href="https://linkedin.com/in/muhammadzeeshanameer" target="_blank"
+                    class=" text-white hover:text-blue-900 text-xl"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"
+                    class=" text-white hover:text-gray-900 text-xl"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://facebook.com/yourhandle" target="_blank"
+                    class=" text-white hover:text-blue-900 text-xl  "><i class="fab fa-facebook fa-lg"></i></a>
+            </div>
+        </div>
+
+        <!-- contact info -->
+        <div class="w-full sm:w-1/3 text-center mb-6">
+            <h4 class="font-bold text-xl mb-4">Contact Me</h4>
+            <p>Email ?
+                <a href="mailto:zeeshanameer576@gmail.com" class="text-white hover:underline"> Click Here</a>
+            </p>
+            <p>Call ?
+                <a href="tel:+92328-6459508" class="text-white hover:underline">Click Here</a>
+            </p>
+        </div>
+
+
+        <!-- Back to top button -->
+        <div class="mt-4 text-center">
+            <a href="#" class="inline-block text-black hover:text-white hover:underline  text-lg font-bold">Back to
+                Top</a>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="mt-6 text-center">
+            <p>&copy; 2024 Zeeshan Ameer. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('translate-x-full'); // For sliding out
+            mobileMenu.classList.toggle('translate-x-0'); // For sliding in
+        });
+
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = mobileMenu.contains(event.target);
+            const isClickToggle = menuToggle.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickToggle) {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.add('translate-x-full');
+                mobileMenu.classList.remove('translate-x-0');
+            }
+        });
+
+        const softSkillsBtn = document.getElementById('soft-skills-btn');
+        const technicalSkillsBtn = document.getElementById('technical-skills-btn');
+        const softSkillsSection = document.getElementById('soft-skills');
+        const technicalSkillsSection = document.getElementById('technical-skills');
+
+        softSkillsBtn.addEventListener('click', function () {
+            softSkillsSection.classList.remove('hidden');
+            technicalSkillsSection.classList.add('hidden');
+
+            // Add active class to Soft Skills button and remove from Technical Skills button
+            softSkillsBtn.classList.add('bg-orange-600', 'border-2', 'border-orange-600');
+            technicalSkillsBtn.classList.remove('bg-orange-600', 'border-2', 'border-orange-600');
+        });
+
+        technicalSkillsBtn.addEventListener('click', function () {
+            technicalSkillsSection.classList.remove('hidden');
+            softSkillsSection.classList.add('hidden');
+
+            // Add active class to Technical Skills button and remove from Soft Skills button
+            technicalSkillsBtn.classList.add('bg-orange-600', 'border-2', 'border-orange-600');
+            softSkillsBtn.classList.remove('bg-orange-600', 'border-2', 'border-orange-600');
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
